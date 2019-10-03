@@ -1,0 +1,17 @@
+# configure auto-configured MultipartConfigElement
+multipart:
+  location: "${java.io.tmpdir}"
+  maxFileSize: 50MB
+  maxRequestSize: 50MB
+
+spring:
+  mvc:
+    favicon:
+      enabled: false
+
+logging:
+  level.: DEBUG
+
+
+server:
+  port: 9090
