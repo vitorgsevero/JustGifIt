@@ -10,19 +10,17 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.filter.FormContentFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
-import org.springframework.web.filter.HttpPutFormContentFilter;
 import org.springframework.web.filter.RequestContextFilter;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 
 import javax.annotation.PostConstruct;
 import java.io.File;
-import java.util.logging.Filter;
 
 
 @SpringBootApplication(exclude = {JacksonAutoConfiguration.class, JmxAutoConfiguration.class, WebSocketServletAutoConfiguration.class})
+
 public class JustGifItApplication {
 
      @Value("{$multipart.location}/gif/")
