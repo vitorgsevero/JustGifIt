@@ -24,7 +24,7 @@ import java.io.File;
 public class JustGifItApplication {
 
      @Value("{$multipart.location}/gif/")
-     private String gifLocation;
+    private String gifLocation;
 
 	public static void main(String[] args) {
 		SpringApplication.run(JustGifItApplication.class, args);

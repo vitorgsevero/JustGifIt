@@ -12,6 +12,12 @@ spring:
 logging:
   level.: DEBUG
 
-
 server:
   port: 9090
+
+com:
+  justgifit:
+    optimize: true
+    gif-location: "${java.io.tmpdir}/gif"
+
+spring.main.allow-bean-definition-overriding: true

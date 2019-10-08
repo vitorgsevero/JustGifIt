@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<javacv.version>1.1</javacv.version>
+		<javax.inject.version>1</javax.inject.version>
 	</properties>
 
 	<dependencies>
@@ -67,6 +69,17 @@
 			<artifactId>animated-gif-lib</artifactId>
 			<version>1.2</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>${javax.inject.version}</version>
 		</dependency>
 
 	</dependencies>
