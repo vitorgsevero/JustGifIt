@@ -13,11 +13,12 @@ logging:
   level.: DEBUG
 
 server:
-  port: 9090
+  port: 8080
 
 com:
   justgifit:
     optimize: true
     gif-location: "${java.io.tmpdir}/gif"
 
+## To fix the conflict with Bean
 spring.main.allow-bean-definition-overriding: true
